@@ -1,0 +1,50 @@
+:host {
+  width: 100%;
+  height: 100%;
+}
+
+.loteria-card {
+  display: flex;
+  margin: 16px;
+  height: calc(100% - 32px);
+  border-width: 3px;
+  border-color: black;
+}
+
+.loteria-card-header {
+  flex-shrink: 0;
+}
+
+.loteria-card-content{
+  flex-grow: 1;
+  overflow: auto;
+}
+
+
+.loteria-card-actions {
+
+}
+
+.example-header-image {
+  background-image: url('../../../assets/megasena.png');
+  background-size: cover;
+}
+
+.loteria-dezena-circle {
+  color: #fff;
+  background-color: #146c2e;
+  margin: 8px 8px 0 0;
+  letter-spacing: 2px;
+  padding: 0 0 0 2px;
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+  line-height: 44px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+}

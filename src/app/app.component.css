@@ -1,0 +1,41 @@
+.loterias-toolbar {
+  background-color: #3853ff;
+}
+
+.loterias-toolbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.loterias-sidenav-container {
+  background-color: var(--mat-toolbar-container-background-color) !important;
+  height: calc(100vh - var(--mat-toolbar-standard-height)) !important;
+}
+
+.loterias-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background: white;
+  border-radius: 0px;
+  min-width: 296px;
+  border-right: 1px solid #e5e7eb;
+  top: var(--mat-toolbar-standard-height) !important;
+}
+
+.entry{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 0px !important;
+}
+
+.loterias-sidenav-content {
+  padding: 1em;
+}
+
+.mdc-list-item {
+  border-radius: 0px !important;
+}
