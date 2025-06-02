@@ -48,3 +48,20 @@
   box-sizing: border-box;
   font-weight: bold;
 }
+
+.loteria-bilhete-square {
+  color: #fff;
+  background-color: #146c2e;
+  margin: 8px 8px 0 0;
+  letter-spacing: 2px;
+  padding: 0 0 0 2px;
+  height: 44px;
+  font-size: 22px;
+  line-height: 44px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+}

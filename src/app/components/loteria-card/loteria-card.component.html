@@ -6,13 +6,28 @@
   </mat-card-header>
   <mat-divider></mat-divider>
   <mat-card-content class="loteria-card-content">
+    @if (this.nomeLoteria != "federal") {
     <p>
       @for(dezena of latestConcurso?.dezenas; track dezena) {
         <span class="loteria-dezena-circle">{{ dezena }}</span>
       }
     </p>
-    <p>Próximo concurso: {{ latestConcurso?.proximoConcurso}} ({{ latestConcurso?.dataProximoConcurso }})</p>
+    } @else {
+    <p>
+      @for(dezena of latestConcurso?.dezenas; track dezena) {
+        <span class="loteria-bilhete-square">{{ dezena }}</span>
+      }
+    </p>
+    }
+    <p>
+      Próximo concurso: {{ latestConcurso?.proximoConcurso}}
+      @if (this.nomeLoteria != "federal") {
+      ({{ latestConcurso?.dataProximoConcurso }})
+      }
+    </p>
+    @if (this.nomeLoteria != "federal") {
     <p>Estimativa de prêmio: {{ latestConcurso?.valorEstimadoProximoConcurso | currency:'BRL':true }}</p>
+    }
   </mat-card-content>
   <mat-divider></mat-divider>
   <mat-card-actions class="loteria-card-actions">
