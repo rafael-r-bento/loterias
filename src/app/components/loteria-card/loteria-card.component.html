@@ -1,6 +1,8 @@
 <mat-card class="loteria-card" appearance="outlined">
   <mat-card-header class="loteria-card-header">
-    <div mat-card-avatar class="example-header-image"></div>
+    <div mat-card-avatar class="header-image"
+         [style]="{'background-image': 'url(' + '/' + nomeLoteria + '.png' + ')'}">
+    </div>
     <mat-card-title>{{ latestConcurso?.loteria }}</mat-card-title>
     <mat-card-subtitle>concurso {{ latestConcurso?.concurso }}</mat-card-subtitle>
   </mat-card-header>
